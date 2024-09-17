@@ -6,9 +6,10 @@
 
 .header--name {
   font-family: "Playball";
-  font-size: 48px;
+  font-size: 56px;
   text-align: center;
   padding: 10px;
+  font-weight: bold;
 }
 
 .main--subtitle {
@@ -33,24 +34,31 @@
   gap: 30px;
 }
 
+.presente-lista p, 
+.presente-lista h3 {
+  font-family: 'Inter';
+}
+
 .presente-lista--img {
   width: 300px;
 }
 
 .presente-lista--button {
-  padding: 10px 25px;
+  padding: 1rem 2.5rem;
   border: none;
   border-radius: 5px;
   background-color: #f472b6;
 }
 
 .presente-lista--button:hover {
-  background-color: #f9a8d4;
+  background-color: #ec4899;
 }
 
 .presente-lista--link {
   text-decoration: none;
-  color: #000;
+  color: #FFF;
+  font-size: 16px;
+  font-family: 'Inter';
 }
 
 .lista-presentes {
@@ -74,7 +82,7 @@
   width: 300px;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 480px) {
   .opcoes-de-loja {
     display: flex;
     justify-content: center;
