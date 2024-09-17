@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header--name {
+  font-family: "Playball";
+  font-size: 48px;
+  text-align: center;
+  padding: 10px;
+}
+
+.main--subtitle {
+  font-family: "Playball";
+  font-size: 36px;
+  text-align: center;
+  padding: 10px;
+}
+
+.line-divisor {
+  background-color: #000;
+  width: auto;
+  height: 2px;
+  margin: 30px 0;
+}
+
+.presente-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.presente-lista--img {
+  width: 300px;
+}
+
+.presente-lista--button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f472b6;
+}
+
+.presente-lista--button:hover {
+  background-color: #f9a8d4;
+}
+
+.presente-lista--link {
+  text-decoration: none;
+  color: #000;
+}
+
+.lista-presentes {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.opcoes-de-loja {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 60px;
+
+  justify-items: center;
+  align-items: center;
+
+  margin: 2rem;
+}
+
+.opcoes-de-loja img {
+  width: 300px;
+}
+
+@media (max-width: 412px) {
+  .opcoes-de-loja {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 60px;
+  
+    margin-top: 2rem;
+  }
+
+  .presente-lista h3 {
+    text-align: center;
+  }
+
+  .presente-lista {
+    margin: 0 10px;
+  }
+  
+}
