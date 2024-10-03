@@ -34,9 +34,9 @@
   gap: 30px;
 }
 
-.presente-lista p, 
+.presente-lista p,
 .presente-lista h3 {
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .presente-lista--img {
@@ -56,15 +56,15 @@
 
 .presente-lista--link {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
 .lista-presentes {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 20px;
 }
 
 .opcoes-de-loja {
@@ -82,7 +82,7 @@
   width: 300px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 994px) {
   .opcoes-de-loja {
     display: flex;
     justify-content: center;
@@ -90,8 +90,14 @@
     align-items: center;
 
     gap: 60px;
-  
+
     margin-top: 2rem;
+  }
+
+  .lista-presentes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .presente-lista h3 {
@@ -101,5 +107,31 @@
   .presente-lista {
     margin: 0 10px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .opcoes-de-loja {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 60px;
+
+    margin-top: 2rem;
+  }
+
+  .lista-presentes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .presente-lista h3 {
+    text-align: center;
+  }
+
+  .presente-lista {
+    margin: 0 10px;
+  }
 }
